@@ -64,3 +64,9 @@ body {
 .notbold {
     font-weight: normal;
 }
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
