@@ -31,9 +31,7 @@
                     <li class="nav-items"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login
-                    </a>
+                    <a id="login-link"><span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -60,7 +58,7 @@
                             <div class="col-12 col-sm-12 col-md-4">
                                 <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
                                 <label id="label" class="from-check-label" for="approve">
-                                    <strong>Remember me</strong>
+                                    Remember me
                                 </label>
                             </div>
                         </div>  
@@ -90,9 +88,8 @@
                 
                 <div class="form-group row mr-5 mt-5">
                     <div class="col-12 col-sm-12 col-md-12">
-                        <a class="btn btn-block nav-link btn-warning" role="button"
-                        data-toggle="modal" data-target="#reserveModal">
-                             Reserve Table</a>
+                        <a class="btn btn-block nav-link btn-warning" role="button" id="reserveButton">
+                            Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -297,9 +294,6 @@
             </div>
         </div>
         
-        
-
-
     </div>
 
     <footer class="footer">
@@ -365,6 +359,18 @@
                 
             });
            
+        });
+
+        $(document).ready(function() {
+            $('#reserveButton').click(function() {
+                $('#reserveModal').modal('show');
+            });
+        });
+
+        $(document).ready(function() {
+            $('#login-link').click(function() {
+                $('#loginModal').modal('show');
+            });
         });
     </script>
    

@@ -28,7 +28,7 @@ body {
   padding: 50px 0px 0px 0px;
   z-index: 0; }
 
-.nav-dark {
+.navbar-dark {
   background-color: #512DA8; }
 
 .tab-content {
@@ -51,3 +51,15 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+.notbold {
+  font-weight: normal; }
+
+.modal-header {
+  background-color: #512DA8;
+  color: #ddd; }
+  .modal-header .close {
+    color: #ddd; }
+
+.modal-body {
+  background-color: #D1C4E9; }
